@@ -18,6 +18,10 @@ $celeste: rgb(170, 208, 217);
 $cursiva: everything, cursive;
 $title: Poppins, sans-serif;
 
+body {
+    font-family: $title;
+}
+
 // CLASES BACKGROUND-COLOR
 
 .bg-rosa {
@@ -120,6 +124,10 @@ nav {
         font-style: italic;
         color: $verde;
         text-shadow: .1rem .1rem .1rem rgb(41, 63, 18);
+
+        @media (max-width: 460px) {
+            font-size: 3.75rem;
+        }
     }
 
     h3 {
@@ -127,7 +135,15 @@ nav {
         font-size: 3rem;
         .gf {
             font-size: 3rem * 0.75 ;
+            @media (max-width: 460px) {
+                font-size: 1.875rem * 0.75;
+            }
         }
+
+        @media (max-width: 420px) {
+            font-size: 1.875rem;
+        }
+
     }
 
     p {
@@ -135,7 +151,7 @@ nav {
             font-size: 1.5rem;
         }
 
-        text-align: justify;
+        //text-align: justify;
         line-height: 1.5rem;
     }
 
@@ -163,21 +179,15 @@ nav {
 // MEDIA FONTS
 
 @media (max-width: 420px) {
-    html {
-        font-size: 12px;
-    }
+
 }
 
 @media (min-width: 420px) {
-    html {
-        font-size: 14px;
-    }
+
 }
 
 @media (min-width: 576px) {
-    html {
-        font-size: 16px;
-    }
+
 }
 
 @media (min-width: 768px) {

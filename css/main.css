@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+body {
+  font-family: Poppins, sans-serif;
+}
+
 .bg-rosa {
   background-color: #fdc4d4;
 }
@@ -105,6 +109,12 @@ nav a {
   text-shadow: 0.1rem 0.1rem 0.1rem #293f12;
 }
 
+@media (max-width: 460px) {
+  .figcaption h2 {
+    font-size: 3.75rem;
+  }
+}
+
 .figcaption h3 {
   font-family: Poppins, sans-serif;
   font-size: 3rem;
@@ -114,8 +124,19 @@ nav a {
   font-size: 2.25rem;
 }
 
+@media (max-width: 460px) {
+  .figcaption h3 .gf {
+    font-size: 1.40625rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .figcaption h3 {
+    font-size: 1.875rem;
+  }
+}
+
 .figcaption p {
-  text-align: justify;
   line-height: 1.5rem;
 }
 
@@ -143,24 +164,6 @@ nav a {
 
 .figcaption a:visited {
   color: white;
-}
-
-@media (max-width: 420px) {
-  html {
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 420px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 576px) {
-  html {
-    font-size: 16px;
-  }
 }
 
 @media (min-width: 1200px) {
