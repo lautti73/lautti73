@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'everything';
+  src: url("../fonts/cicle_fina-webfont.eot") format("embedded-opentype"), url("../fonts/Everything.woff2") format("woff2"), url("../fonts/Everything.woff") format("woff"), url("../fonts/Everything.ttf") format("truetype"), url("../fonts/Everything.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bg-rosa {
+  background-color: #fdc4d4;
+}
+
+.bg-salmon {
+  background-color: #eed5d1;
+}
+
+.bg-verde {
+  background-color: #cbe3b3;
+}
+
+.bg-celeste {
+  background-color: #aad0d9;
+}
+
+nav {
+  background: #eed5d1;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #eed5d1), to(#f4e6e4));
+  background: linear-gradient(0deg, #eed5d1 50%, #f4e6e4 100%);
+}
+
+nav a {
+  font-family: Poppins, sans-serif;
+  outline: none;
+}
+
+#fondologo {
+  width: 11.5rem;
+  background: #eed5d1;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #eed5d1), to(#f4e6e4));
+  background: linear-gradient(0deg, #eed5d1 50%, #f4e6e4 100%);
+  border-radius: 1rem 1rem 3.5rem 3.5rem;
+}
+
+#fondologo:active {
+  background: #eed5d1;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, white), to(#eed5d1));
+  background: linear-gradient(0deg, white 40%, #eed5d1 100%);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+#miskalogo {
+  width: 75%;
+}
+
+@media (max-width: 992px) {
+  #fondologo {
+    width: 10rem;
+    border-radius: .8695rem .8695rem 3.043rem 3.043rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .me-md-6 {
+    margin-right: 5rem !important;
+  }
+  .ms-md-6 {
+    margin-left: 5rem !important;
+  }
+}
+
+.carousel-item > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: calc(100vh - 62px);
+  width: 100%;
+}
+
+.imgCont img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.imgCont {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.figcaption {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+@media (min-width: 992px) {
+  .figcaption {
+    width: 40%;
+  }
+}
+
+.figcaption h2 {
+  font-family: everything, cursive;
+  font-size: 6rem;
+  font-style: italic;
+  color: #cbe3b3;
+  text-shadow: 0.1rem 0.1rem 0.1rem #293f12;
+}
+
+.figcaption h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 3rem;
+}
+
+.figcaption h3 .gf {
+  font-size: 2.25rem;
+}
+
+.figcaption p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.figcaption p:first-letter {
+  font-size: 1.5rem;
+}
+
+.figcaption a {
+  text-decoration: none;
+}
+
+.figcaption button {
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .figcaption button {
+    visibility: hidden;
+  }
+}
+
+.figcaption a:link {
+  color: white;
+}
+
+.figcaption a:visited {
+  color: white;
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 420px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
