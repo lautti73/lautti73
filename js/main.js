@@ -11,6 +11,25 @@ let navHeight;
 window.addEventListener('load', reSize);
 window.addEventListener('resize', reSize);
 
+let imagen1 = basicScroll.create({
+    elem: document.querySelector('.segundo-articulo img'),
+    from: 'top-bottom',
+    to: 'bottom-top',
+    props: {
+      '--imagen1': {
+        from: '0',
+        to: '-50%'
+      }
+    }
+  });
+
+window.onresize = function() {
+
+	
+
+}
+
+
 function reSize() {
     winWidth = window.innerWidth;
     winHeight = window.innerHeight;
@@ -33,8 +52,18 @@ function reSize() {
     }
 
     if(winWidth < 993) {
-        vermasBtn.setAttribute('disabled');
+        vermasBtn.setAttribute('disabled', 'true');
+        vermasBtn.removeAttribute('enable');
     } else {
-        vermasBtn.setAttribute('enable');
+        vermasBtn.setAttribute('enable', 'true');
+        vermasBtn.removeAttribute('disabled');
     }
+
+    imagen1.calculate()
+	imagen1.update()
 }
+
+    imagen1.start();
+
+
+

@@ -1,3 +1,8 @@
+:root {
+  --imagen1: 0;
+  --imagen2: 0;
+}
+
 @font-face {
   font-family: 'everything';
   src: url("../fonts/cicle_fina-webfont.eot") format("embedded-opentype"), url("../fonts/Everything.woff2") format("woff2"), url("../fonts/Everything.woff") format("woff"), url("../fonts/Everything.ttf") format("truetype"), url("../fonts/Everything.svg") format("svg");
@@ -166,9 +171,49 @@ nav a {
   color: white;
 }
 
-@media (min-width: 1200px) {
-  html {
-    font-size: 16px;
+.segundo-articulo {
+  height: 140px;
+  overflow: hidden;
+}
+
+@media (min-width: 480px) {
+  .segundo-articulo {
+    height: 210px;
+  }
+}
+
+@media (min-width: 720px) {
+  .segundo-articulo {
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .segundo-articulo {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .segundo-articulo {
+    height: 550px;
+  }
+}
+
+.segundo-articulo img {
+  width: 100%;
+  -webkit-transform: none;
+          transform: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 300px) {
+  .segundo-articulo img {
+    -o-object-fit: none;
+       object-fit: none;
+    -webkit-transform: translateY(var(--imagen1));
+            transform: translateY(var(--imagen1));
   }
 }
 /*# sourceMappingURL=main.css.map */
