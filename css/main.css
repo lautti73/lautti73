@@ -172,25 +172,25 @@ nav a {
 }
 
 .segundo-articulo {
-  height: 275px;
+  height: 350px;
   overflow: hidden;
 }
 
 @media (min-width: 576px) {
   .segundo-articulo {
-    height: 300px;
+    height: 400px;
   }
 }
 
 @media (min-width: 768px) {
   .segundo-articulo {
-    height: 365px;
+    height: 450px;
   }
 }
 
 @media (min-width: 992px) {
   .segundo-articulo {
-    height: 450px;
+    height: 500px;
   }
 }
 
