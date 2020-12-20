@@ -186,15 +186,15 @@ nav {
 // SEGUNDO ARTICULO
 
 .segundo-articulo {
-    height: 165px;
+    height: 275px;
     overflow: hidden;
  
-    @media (min-width: 480px) {
-        height: 250px;
+    @media (min-width: 576px) {
+        height: 300px;
     }
 
-    @media (min-width: 720px) {
-        height: 325px;
+    @media (min-width: 768px) {
+        height: 365px;
     }
 
     @media (min-width: 992px) {
@@ -221,4 +221,58 @@ nav {
     };
 }
 
-// MEDIA FONTS
+// FOOTER
+
+footer {
+    background: rgb(238,213,209);
+    background: linear-gradient(0deg, rgba(238,213,209,1) 0%, rgba(238,212,208,1) 81%, rgba(230,205,202,1) 100%);
+}
+
+.footer-nav {
+    list-style: none;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    a {
+        text-decoration: none;
+        border-bottom: .1rem dotted black;
+
+        &:hover {
+            border-bottom: none;
+        } 
+    }
+}
+
+.icons a {
+    border-radius: 55%;
+
+    @media screen and (pointer: coarse) {
+        &:active {
+            background-color: rgb(238,213,209);
+            mix-blend-mode: difference;
+            transition: all 500ms;
+        }
+    }
+
+    @media screen and (hover: hover) {
+        &:hover {
+            background-color: rgb(238,213,209);
+            mix-blend-mode: difference;
+            transition: all 500ms;
+        }
+    }
+    
+}
+
+// WHATSAPP LOGO
+
+#wppbtn {
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    width: calc(1vw + 65px);
+    margin: 1vw;
+    img {
+        width: 100%;
+    }
+}
