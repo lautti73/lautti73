@@ -110,10 +110,15 @@ nav {
 
 // PRIMER ARTICULO
 
-.cita{
-    transform: translateX(var(--cita));
-    opacity: var(--cita-opacidad);
-  }
+.cont-cita2 {
+    overflow: hidden;
+
+    .cita{
+        transform: translateX(var(--cita));
+        opacity: var(--cita-opacidad);
+    }
+
+}
 
 .imgCont img{
     width: 100%;
