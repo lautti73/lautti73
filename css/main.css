@@ -227,7 +227,11 @@ nav a {
   }
 }
 
-.cita2 {
+.cont-cita2 {
+  overflow: hidden;
+}
+
+.cont-cita2 .cita2 {
   -webkit-transform: translateX(var(--cita2));
           transform: translateX(var(--cita2));
   opacity: var(--cita-opacidad2);
