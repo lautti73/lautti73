@@ -232,12 +232,15 @@ nav {
 
 // SEGUNDO ARTICULO
 
-.cita2{
-    transform: translateX(var(--cita2));
-    opacity: var(--cita-opacidad2);
-  }
+.cont-cita2 {
+    overflow: hidden;
 
+    .cita2{
+        transform: translateX(var(--cita2));
+        opacity: var(--cita-opacidad2);
+    }
 
+}
 .figcaption2 {
     order: -1;
 
