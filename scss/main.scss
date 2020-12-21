@@ -276,3 +276,15 @@ footer {
         width: 100%;
     }
 }
+
+#logo {
+    width: calc(1vw + 27.5px);
+    height: 100%;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
