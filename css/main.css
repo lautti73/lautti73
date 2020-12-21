@@ -88,7 +88,11 @@ nav a {
   width: 100%;
 }
 
-.cita {
+.cont-cita2 {
+  overflow: hidden;
+}
+
+.cont-cita2 .cita {
   -webkit-transform: translateX(var(--cita));
           transform: translateX(var(--cita));
   opacity: var(--cita-opacidad);
