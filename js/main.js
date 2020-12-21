@@ -87,12 +87,7 @@ function reSize() {
 
     imagen1.calculate()
     imagen1.update()
-    
-    cita.calculate()
-    cita.update()
 
-    cita2.calculate()
-	  cita2.update()
 }
 
     imagen1.start();
