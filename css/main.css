@@ -272,4 +272,15 @@ footer {
 #wppbtn img {
   width: 100%;
 }
+
+#logo {
+  width: calc(1vw + 27.5px);
+  height: 100%;
+}
+
+#logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=main.css.map */
