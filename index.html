@@ -72,6 +72,7 @@
 
     <!--CONTENT-->
 
+    <!-- ARTICULO 1-->
     <article>
       <div class="container">
         <div class="row align-items-start justify-content-center">
@@ -79,8 +80,10 @@
               <img src="images/quienessomos.png" alt="">
             </div>
             <div class="col-lg-6 figcaption flex-grow-1 py-lg-5 m-lg-5 mt-md-5 mt-4">
-              <h2 class="text-center text-xl-start">¡Bienvenidos a!</h2>
-              <h3>MISKA <span class="gf">GLUTEN FREE</span></h3>
+              <hgroup class="cita">
+                <h2 class="text-center text-xl-start">¡Bienvenidos a!</h2>
+                <h3>MISKA <span class="gf">GLUTEN FREE</span></h3>
+              </hgroup>
               <p>Un lugar dedicado especialmente a la elaboración y venta de productos libres de gluten. Esperamos que el recorrido por nuestra pagina, sea un viaje a través del placer!
                 Serán bienvenidos sus comentarios y su interaccion con nosotros.</p>
               <div class="mx-auto mt-xl-5 mt-lg-4" >
@@ -95,35 +98,58 @@
       </div>
     </article>
 
+    <!-- FOTO RESBALADIZA-->
     <article>
       <div class="container-fluid segundo-articulo px-0">
         <picture>
-          <!--<source media="(max-width: 480px)" srcset="images/marrocup-720.jpg">
-          <source media="(max-width: 720px)" srcset="images/marrocup-1280.jpg">-->
+          <source media="(max-width: 480px)" srcset="images/marrocup-720.jpg">
+          <source media="(max-width: 720px)" srcset="images/marrocup-1280.jpg">
           <source media="(max-width: 992px)" srcset="images/marrocup-75.jpg">
           <source media="(min-width: 992px)" srcset="images/marrocup.jpg">
           <img class="img-fluid" src="images/marrocup.jpg" alt="">
         </picture>
       </div>
     </article>
+
+    <!-- ARTICULO 2-->
     <article>
       <div class="container">
         <div class="row align-items-start justify-content-center">
-          <div class="col-lg-5 imgCont flex-grow-1 py-lg-5 m-lg-5 mt-md-5 my-4">
-            <img src="images/quienessomos.png" alt="">
-          </div>
-          <div class="col-lg-5 figcaption flex-grow-1 py-lg-5 m-lg-5 mt-md-5 mt-4">
-            <h2 class="text-center text-xl-start">¡Bienvenidos a!</h2>
-            <h3>MISKA <span class="gf">GLUTEN FREE</span></h3>
-            <p>Un lugar dedicado especialmente a la elaboración y venta de productos libres de gluten. Esperamos que el recorrido por nuestra pagina, sea un viaje a través del placer!
-                Serán bienvenidos sus comentarios y su interaccion con nosotros.</p>
-            <div class="mx-auto mt-xl-5 mt-lg-4" >
-              <button type="button" class="btn btn-dark">
-                <a class="" href="#">
-                  Ver más
-                </a>
-              </button>
+          <div class="col-lg-5 figcaption2 flex-grow-1 p-sm-4">
+            <h2 class="cita2 text-center my-5">Nuestras creaciones!</h2>
+
+            <div class="cartas">
+
+              <div class="card mb-4 mb-md-0">
+                <img src="images/alfajorcitos.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Masas</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed mollit anim id est laborum.</p>
+                  <a href="#" class="btn btn-dark">Ver productos</a>
+                </div>
+              </div>
+
+              <div class="card mb-4 mb-md-0">
+                <img src="images/chocotorta.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tortas</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed mollit anim id est laborum.</p>
+                  <a href="#" class="btn btn-dark">Ver productos</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="images/sanguche.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Salado</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed mollit anim id est laborum.</p>
+                  <a href="#" class="btn btn-dark">Ver productos</a>
+                </div>
+              </div>
+
+
             </div>
+
           </div>
         </div>
       </div>
@@ -138,27 +164,29 @@
   
 
   <footer>
-    <div class="container-fluid d-flex flex-column">
+    <div class="container-fluid d-flex flex-column pt-sm-4">
   
       <div class="row p-4">
-        <div class="col-sm">
-          <ul class="footer-nav d-none d-sm-block">
+        <div class="col-sm d-flex align-items-center">
+          <ul class="footer-nav d-none d-sm-block fs-5">
             <li><a class="link-dark" href="#">Inicio</a></li>
             <li><a class="link-dark" href="#">Productos</a></li>
             <li><a class="link-dark" href="#">Contacto</a></li>
             <li><a class="link-dark" href="#">Cursos</a></li>
           </ul>
         </div>
-        <div class="col-sm">
-          <img class="mx-auto d-block img-fluid my-5 my-sm-0" src="images/logo/miskalogo.png" alt="">
+        <div class="col-sm d-flex align-items-center justify-content-center">
+          <div class="" id="isologo">
+           <img class="mx-auto d-block img-fluid my-5 my-sm-0" src="images/logo/isologo.svg" alt="">
+          </div>
         </div>
         <div class="col-sm d-flex align-items-between icons">
           <div class="row flex-row flex-sm-column px-3 my-sm-auto align-items-sm-end justify-content-center" id="logo-cont">
-            <div class="col-3 p-0 me-5 me-sm-0 p-sm-0 d-flex align-items-center" id="logo">
+            <div class="col-3 p-0 me-5 mb-sm-3 me-sm-0 p-sm-0 d-flex align-items-center" id="logo">
               <a class="p-1 p-sm-2" href=""><img class="" src="images/logo/whatsapp-svg.svg" alt=""></a>
               <!--<p class="fw-bold">351 5288076</p>-->
             </div>
-            <div class="col-3 p-0 me-5 me-sm-0 p-sm-0 d-flex align-items-center" id="logo">
+            <div class="col-3 p-0 me-5 mb-sm-3 me-sm-0 p-sm-0 d-flex align-items-center" id="logo">
               <a class="p-1 p-sm-2" href=""><img class="" src="images/logo/instagram-svg.svg" alt=""></a>
               <!--<p class="fw-bold">@miskaglutenfree</p>-->
             </div>
