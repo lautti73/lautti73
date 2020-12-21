@@ -23,11 +23,37 @@ let imagen1 = basicScroll.create({
     }
   });
 
-window.onresize = function() {
+let cita = basicScroll.create({
+    elem: document.querySelector('.cita'),
+    from: 'top-bottom',
+    to: 'middle-middle',
+    props: {
+      '--cita': {
+        from: '50%',
+        to: '0'
+      },
+      '--cita-opacidad': {
+        from: 0.01,
+        to: 0.99
+      }
+    }
+  });
 
-	
-
-}
+  let cita2 = basicScroll.create({
+    elem: document.querySelector('.cita2'),
+    from: 'top-bottom',
+    to: 'top-middle',
+    props: {
+      '--cita2': {
+        from: '50%',
+        to: '0'
+      },
+      '--cita-opacidad2': {
+        from: 0.01,
+        to: 0.99
+      }
+    }
+  });
 
 
 function reSize() {
@@ -60,10 +86,17 @@ function reSize() {
     }
 
     imagen1.calculate()
-	imagen1.update()
+    imagen1.update()
+    
+    cita.calculate()
+    cita.update()
+
+    cita2.calculate()
+	  cita2.update()
 }
 
     imagen1.start();
-
+    cita.start();
+    cita2.start();
 
 
