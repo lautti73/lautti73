@@ -42,7 +42,7 @@ let cita = basicScroll.create({
   let cita2 = basicScroll.create({
     elem: document.querySelector('.cita2'),
     from: 'top-bottom',
-    to: 'top-middle',
+    to: 'middle-middle',
     props: {
       '--cita2': {
         from: '50%',
@@ -85,8 +85,12 @@ function reSize() {
         vermasBtn.removeAttribute('disabled');
     }
 
-    imagen1.calculate()
-    imagen1.update()
+    imagen1.calculate();
+    imagen1.update();
+    cita.calculate();
+    cita.update();
+    cita2.calculate();
+    cita2.update();
 
 }
 
