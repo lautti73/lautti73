@@ -274,7 +274,7 @@ footer {
 }
 
 #logo {
-  width: -o-calc(1vw + 27.5px);
+  width: calc(1.75% + 35px);
   height: 100%;
 }
 
