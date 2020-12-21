@@ -278,7 +278,9 @@ footer {
 }
 
 #logo {
-    width: calc(1vw + 27.5px);
+    width: -webkit-calc(1vw + 27.5px);
+    width: -moz-calc(1vw + 27.5px);
+    width: -o-calc(1vw + 27.5px);
     height: 100%;
     img {
         width: 100%;
